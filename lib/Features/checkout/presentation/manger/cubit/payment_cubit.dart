@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:bloc/bloc.dart';
 import 'package:checkout_payment/Features/checkout/data/models/payment_intent_input_model.dart';
 import 'package:checkout_payment/Features/checkout/data/repos/checkout_repo.dart';
@@ -17,9 +19,16 @@ class PaymentCubit extends Cubit<PaymentState> {
     var data = await checkoutRepo.makePayment(
       paymentIntentInputModel: paymentIntentInputModel,
     );
-    data.fold(
-      (l) => emit(PaymentFailure(errMessage: l.errMessage)),
-      (r) => emit(PaymentSuccess()),
-    );
+
+    data.fold((l) {
+      log('Payment error: ${l.errMessage}');
+      emit(PaymentFailure(l.errMessage));
+    }, (r) => emit(PaymentSuccess()));
+  }
+
+  @override
+  void onChange(Change<PaymentState> change) {
+    log(change.toString());
+    super.onChange(change);
   }
 }
