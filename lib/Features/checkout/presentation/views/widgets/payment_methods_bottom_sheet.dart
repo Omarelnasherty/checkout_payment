@@ -1,6 +1,5 @@
 import 'package:checkout_payment/Features/checkout/presentation/views/widgets/custom_button_bloc_consumer.dart';
 import 'package:checkout_payment/Features/checkout/presentation/views/widgets/payment_methods_list_view.dart';
-import 'package:checkout_payment/core/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class PaymentMethodsBottomSheet extends StatefulWidget {
@@ -20,7 +19,6 @@ class _PaymentMethodsBottomSheetState extends State<PaymentMethodsBottomSheet> {
     } else {
       isPaypal = true;
     }
-
     setState(() {});
   }
 

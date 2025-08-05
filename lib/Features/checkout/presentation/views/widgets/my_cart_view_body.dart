@@ -1,15 +1,12 @@
 import 'package:checkout_payment/Features/checkout/data/repos/checkout_repo_impl.dart';
 import 'package:checkout_payment/Features/checkout/presentation/manger/cubit/payment_cubit.dart';
-import 'package:checkout_payment/Features/checkout/presentation/views/payment_details.dart';
 import 'package:checkout_payment/Features/checkout/presentation/views/widgets/cart_info_item.dart';
 import 'package:checkout_payment/Features/checkout/presentation/views/widgets/payment_methods_bottom_sheet.dart';
-import 'package:checkout_payment/Features/checkout/presentation/views/widgets/payment_methods_list_view.dart';
 import 'package:checkout_payment/Features/checkout/presentation/views/widgets/total_price_widget.dart';
-import 'package:checkout_payment/core/utils/styles.dart';
 import 'package:checkout_payment/core/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:lottie/lottie.dart';
 
 class MyCartViewBody extends StatelessWidget {
   const MyCartViewBody({super.key});
@@ -21,7 +18,7 @@ class MyCartViewBody extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(height: 18),
-          Expanded(child: Image.asset('assets/images/basket_image.png')),
+          Expanded(child: Lottie.asset('assets/images/Cart.json')),
           const SizedBox(height: 25),
           const OrderInfoItem(title: 'Order Subtotal', value: r'92$'),
           const SizedBox(height: 3),

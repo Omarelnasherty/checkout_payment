@@ -7,7 +7,7 @@ import 'package:checkout_payment/Features/checkout/data/models/item_list_model/i
   var amount = AmountModel(
     total: "100",
     currency: 'USD',
-    details: Details(shipping: "8", shippingDiscount: 0, subtotal: '92'),
+    details: Details(shipping: "0", shippingDiscount: 0, subtotal: '100'),
   );
 
   List<OrderItemModel> orders = [

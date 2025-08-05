@@ -1,8 +1,5 @@
 import 'dart:developer';
-
 import 'package:checkout_payment/Features/checkout/data/models/amount_model/amount_model.dart';
-import 'package:checkout_payment/Features/checkout/data/models/amount_model/details.dart';
-import 'package:checkout_payment/Features/checkout/data/models/item_list_model/item.dart';
 import 'package:checkout_payment/Features/checkout/data/models/item_list_model/item_list_model.dart';
 import 'package:checkout_payment/Features/checkout/data/models/payment_intent_input_model.dart';
 import 'package:checkout_payment/Features/checkout/presentation/manger/cubit/payment_cubit.dart';
@@ -19,6 +16,7 @@ class CustomButtonBlocConsumer extends StatelessWidget {
   const CustomButtonBlocConsumer({super.key, required this.isPaypal});
 
   final bool isPaypal;
+
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<PaymentCubit, PaymentState>(
@@ -120,7 +118,6 @@ class CustomButtonBlocConsumer extends StatelessWidget {
                 );
               },
               onCancel: () {
-                print('cancelled:');
                 Navigator.pop(context);
               },
             ),

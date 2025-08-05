@@ -3,7 +3,6 @@ import 'package:checkout_payment/Features/checkout/presentation/views/widgets/pa
 import 'package:checkout_payment/Features/checkout/presentation/views/widgets/total_price_widget.dart';
 import 'package:checkout_payment/core/utils/styles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ThankYouCard extends StatelessWidget {
@@ -32,13 +31,13 @@ class ThankYouCard extends StatelessWidget {
               style: Styles.style20,
             ),
             const SizedBox(height: 42),
-            const PaymentItemInfo(title: 'Date', value: '01/24/2023'),
+            const PaymentItemInfo(title: 'Date', value: '07/24/2025'),
             const SizedBox(height: 20),
             const PaymentItemInfo(title: 'Time', value: '10:15 AM'),
             const SizedBox(height: 20),
-            const PaymentItemInfo(title: 'To', value: 'Sam Louis'),
+            const PaymentItemInfo(title: 'To', value: 'El-nasherty'),
             const Divider(height: 60, thickness: 2),
-            const TotalPrice(title: 'Total', value: r'$50.97'),
+            const TotalPrice(title: 'Total', value: r'$100'),
             const SizedBox(height: 30),
             const CardInfoWidget(),
             const Spacer(),
