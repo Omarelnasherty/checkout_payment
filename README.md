@@ -1,3 +1,19 @@
+## 📹 Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/CrR3Cpm_e9Q/0.jpg)](https://youtu.be/CrR3Cpm_e9Q)
+
+**Features shown in the demo:**
+- Stripe Payment (with Ephemeral Key)
+- PayPal Payment
+- Secure Card Storage
+
+---
+
+YouTube link: https://youtu.be/CrR3Cpm_e9Q
+
+
+
+
 # 💳 Checkout Payment App
 A complete Flutter-based payment app that integrates Stripe and PayPal, focusing on delivering a smooth and secure checkout experience for users.
 
@@ -112,4 +128,5 @@ flutter run
 - Card details are handled securely, and session-specific data ensures a better user experience on repeat transactions.
 
 --- 
+
 
