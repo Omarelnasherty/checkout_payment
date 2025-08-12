@@ -13,7 +13,8 @@ A complete Flutter-based payment app that integrates Stripe and PayPal, focusing
 
 
 
-https://github.com/user-attachments/assets/efccfd4f-4544-43ed-88c7-6a063d85f253
+https://github.com/user-attachments/assets/14bd08c8-d256-4eac-8fce-6ef2e1e0148f
+
 
 
 
@@ -135,6 +136,7 @@ flutter run
 - Card details are handled securely, and session-specific data ensures a better user experience on repeat transactions.
 
 --- 
+
 
 
 
